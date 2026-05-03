@@ -273,7 +273,7 @@
 #define ENABLE_AUTO_OFF_DISPLAY             // Enable automatic turn-off display function & brightness adjustment function
 #if ENABLED(ENABLE_AUTO_OFF_DISPLAY)
 
-  // #define DWIN_DIMM_MENU                    // Enable LCD Menu to Configure Brightness & DIMM parameters
+  #define DWIN_DIMM_MENU                    // Enable LCD Menu to Configure Brightness & DIMM parameters
 
   extern int16_t TURN_OFF_TIME;             // turn-off time: 5min
   extern int16_t DIMM_SCREEN_BRIGHTNESS;    // brightness 0x00-0xff:0
@@ -1947,7 +1947,7 @@
 
 #define Z_AFTER_HOMING         10   // (mm) Height to move to after homing (if Z was homed)
 
-// #define DWIN_ZHOME_MENU             // Enable LCD Menu to Configure Z Height after Homing 
+#define DWIN_ZHOME_MENU             // Enable LCD Menu to Configure Z Height after Homing 
 #if ENABLED(DWIN_ZHOME_MENU)
   extern uint8_t CZ_AFTER_HOMING; 
 #endif
@@ -2624,7 +2624,7 @@
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED    0//255 // Value from 0 to 255
 
-// #define EXTRA_PREHEAT_LABELS   // Enable LCD Menu to Configure 2 Extra Preheat Materials
+#define EXTRA_PREHEAT_LABELS   // Enable LCD Menu to Configure 2 Extra Preheat Materials
 #if ENABLED(EXTRA_PREHEAT_LABELS)
   #define PREHEAT_3_LABEL       "PETG"
   #define PREHEAT_3_TEMP_HOTEND 240
@@ -2640,7 +2640,7 @@
 #endif
 
 //  #define PREHEAT_ALERT           // Enable an alert when preheating is complete
-// #define DWIN_CUSTOM_EXTRUDE     // Enable LCD Menu for Custom Extrude Functions
+#define DWIN_CUSTOM_EXTRUDE     // Enable LCD Menu for Custom Extrude Functions
 
 /**
  * @section nozzle park
